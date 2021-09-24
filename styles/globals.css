@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/**
+* TODO: Need to implement Tailwind SCSS for body
+*/
+
+body{
+  background-color:#000000;
+  font-family:sans-serif;
+  color:rgba(55, 65, 81, 100%);
+ 
+}
