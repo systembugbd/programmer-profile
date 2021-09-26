@@ -3,7 +3,7 @@ import ServiceCard from "../Components/ServiceCard";
 
 const index = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 mt-3 md:grid-cols-2 lg:grid-cols-2">
+    <div className="grid grid-cols-1 gap-2 mt-3 lg:gap-4 md:gap-4 md:grid-cols-2 lg:grid-cols-2">
       {services.map((service, key) => (
         <ServiceCard service={service} />
       ))}

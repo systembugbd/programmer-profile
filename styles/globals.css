@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /**
 * TODO: Need to implement Tailwind SCSS for body
 */
 
-body{
-  background-color:#000000;
-  font-family:sans-serif;
-  color:rgba(55, 65, 81, 100%);
- 
+body {
+  background: linear-gradient(100deg, #25303f, #374151 25%);
+  font-family: sans-serif;
+  color: rgba(55, 65, 81, 100%);
+  min-height: 100vh;
 }
