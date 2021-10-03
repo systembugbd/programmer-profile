@@ -34,11 +34,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between">
+    <div className="flex flex-col p-4 px-8 lg:flex-row lg:justify-between">
       <div className="flex-row inline pb-2 mb-2 text-2xl text-indigo-500 border-b-2 border-pink-500 lg:flex-row">
         {activeItem}
       </div>
-      <div className="flex flex-row items-end justify-between gap-2 pb-2 mb-2 lg:flex-row md:justify-around">
+      <div className="flex flex-row items-end justify-between gap-2 pb-2 mb-2 font-bold text-gray-600 lg:flex-row md:justify-around">
         <NaveItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}

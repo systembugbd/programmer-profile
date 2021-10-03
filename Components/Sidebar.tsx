@@ -15,8 +15,8 @@ import styles from "./../styles/Sidebar.module.css";
 
 const Sidebar = () => {
   return (
-    <div className="">
-      <div className="">
+    <div>
+      <div>
         <Image
           src="/team/138/b8983c92771.577242aee9382.jpg"
           width="100px"
@@ -91,7 +91,7 @@ const Sidebar = () => {
         </a>
       </div>
       <div
-        className="px-4 py-4 text-gray-700 bg-gray-200"
+        className="px-4 py-4 text-gray-700 bg-gray-300"
         style={{ marginLeft: "-2.5rem", marginRight: "-2.5rem" }}
       >
         <div className="flex justify-center text-center align-center hover:text-purple-600">
