@@ -11,7 +11,7 @@ import { FaUserGraduate, FaLaptopCode } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col bg-gray-50 rounded-xl">
+    <div className="flex flex-col rounded-xl">
       <div>
         {skills.map((data, i) => (
           <SkillsCard data={data} key={i} />

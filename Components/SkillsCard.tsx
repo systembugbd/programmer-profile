@@ -7,7 +7,7 @@ const SkillsCard: FunctionComponent<{
 }> = ({ data: { Icon, name, label, percentage, type } }) => {
   return (
     <>
-      <div className="flex flex-col py-1.5 card">
+      <div className="flex flex-col py-1 card">
         <div className="flex items-center justify-start rounded-r-full bg-gradient-to-r from-gray-300 to-gray-400">
           <h4
             className="inline-flex items-center justify-start pl-2 text-xs text-white rounded-r-full text-smtext-white bg-gradient-to-r from-pink-600 to-indigo-600"
@@ -16,7 +16,7 @@ const SkillsCard: FunctionComponent<{
             <Icon className="flex w-5 h-5 pr-2 text-white" />
             {name}
           </h4>
-          <div className="items-center justify-center inline pl-1 text-xs text-gray-50">
+          <div className="items-center justify-center inline pl-1 text-xs text-gray-300">
             {label}
           </div>
         </div>

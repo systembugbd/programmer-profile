@@ -10,10 +10,16 @@ import {
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import Image from "next/image";
-
 import styles from "./../styles/Sidebar.module.css";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+
+  const toggelTheme = () => {
+    setTheme(theme == "light" ? "dark" : "light");
+  };
+
   const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
@@ -25,7 +31,7 @@ const Sidebar = () => {
           height="100px"
           className="border-4 border-purple-700 border-solid rounded-full"
         />
-        <h1 className="text-3xl font-bold tracking-wider text-gray-700 font-Kaushan">
+        <h1 className="text-3xl font-bold tracking-wider text-gray-700 dark:text-pink-500 font-Kaushan">
           <span className="tracking-wider text-purple-600">Shaheb</span> Ali
         </h1>
       </div>
@@ -93,7 +99,7 @@ const Sidebar = () => {
         </a>
       </div>
       <div
-        className="px-4 py-4 text-gray-700 bg-gray-300"
+        className="px-4 py-4 text-gray-700 bg-gray-300 dark:bg-gray-400"
         style={{ marginLeft: "-2.5rem", marginRight: "-2.5rem" }}
       >
         <div className="flex justify-center text-center align-center hover:text-purple-600">
@@ -124,7 +130,10 @@ const Sidebar = () => {
         <button className="px-4 py-2 my-2 text-gray-100 rounded-full outline-none bg-gradient-to-r from-pink-600 to-purple-600">
           <a href="mailto:wwwdonus@gmail.com">Email Me</a>
         </button>
-        <button className="px-4 py-2 my-2 text-gray-100 rounded-full outline-none bg-gradient-to-r from-pink-600 to-purple-600">
+        <button
+          onClick={toggelTheme}
+          className="px-4 py-2 my-2 text-gray-100 rounded-full outline-none bg-gradient-to-r from-pink-600 to-purple-600"
+        >
           Toogle Theme
         </button>
       </div>

@@ -8,21 +8,26 @@ const EduCard: FunctionComponent<{
   return (
     <>
       <div className="py-2 card">
-        <h4 className="flex text-sm font-bold">
-          <Icon className="flex w-5 h-5 pr-2 text-purple-500" />
+        <h4 className="flex text-sm font-bold dark:text-gray-300">
+          <Icon className="flex w-5 h-5 pr-2 text-purple-500 dark:text-gray-400" />
           {name}
         </h4>
         <div>
           <h6 className="text-sm">
             {link ? (
               <Link href={link}>
-                <a className="text-purple-500">{institute}</a>
+                <a
+                  className="text-purple-500 dark:text-gray-400"
+                  target="_blank"
+                >
+                  {institute}
+                </a>
               </Link>
             ) : (
               institute
             )}
           </h6>
-          <div className="text-xs">
+          <div className="text-xs dark:text-gray-400">
             <p>
               {grade ? grade + " |" : batch ? batch + " |" : ""} {year}
             </p>

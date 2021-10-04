@@ -4,7 +4,7 @@ import ServiceCard from "../Components/ServiceCard";
 const index = () => {
   return (
     <>
-      <div className="flex-grow px-4 text-left text-gray-500 ">
+      <div className="flex-grow px-4 text-left text-gray-500 dark:text-gray-400 ">
         Professional Frontend Developer, I worked for various local and
         multinational IT company. Currently I am working for a multinational IT
         company as a Web Developer for 6Years. I am enthusiastic, hard worker
@@ -12,10 +12,10 @@ const index = () => {
         socket.io and many more to work with Frontend and Backend Development.
       </div>
       <div
-        className="flex-grow p-4 mt-4 bg-gradient-to-l from-gray-500 to-gray-600 lg:rounded-b-xl md:rounded-b-xl"
+        className="flex-grow p-4 mt-4 bg-gray-600 dark:bg-gray-900 dark:text-gray-400 lg:rounded-b-xl md:rounded-b-xl"
         style={{ height: "100%" }}
       >
-        <h3 className="mb-3 text-xl font-bold tracking-wider text-white">
+        <h3 className="mb-3 text-xl font-bold tracking-wider text-gray-400">
           What I am doing...
         </h3>
         <div className="grid gap-4 lg:grid-cols-2">
