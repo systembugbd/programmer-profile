@@ -3,6 +3,8 @@ import { FunctionComponent, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   const [activeItem, setActiveItem] = useState<string>("");
   const { pathname } = useRouter();
   const router = useRouter();
@@ -26,11 +28,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    if (pathname === "/") setActiveItem("About");
-    if (pathname === "/resume") setActiveItem("Resume");
-    if (pathname === "/projects") setActiveItem("Projects");
-    if (pathname === "/repo") setActiveItem("Repo");
-    if (pathname === "/blog") setActiveItem("Blog");
+    if (pathname === prefix + "/") setActiveItem("About");
+    if (pathname === prefix + "/resume") setActiveItem("Resume");
+    if (pathname === prefix + "/projects") setActiveItem("Projects");
+    if (pathname === prefix + "/repo") setActiveItem("Repo");
+    if (pathname === prefix + "/blog") setActiveItem("Blog");
   }, []);
 
   return (
@@ -42,32 +44,32 @@ const Navbar = () => {
         <NaveItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          route="/"
+          route={`${prefix}/`}
           name="About"
         />
         <NaveItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          route="/resume"
+          route={`${prefix}/resume`}
           name="Resume"
         />
         <NaveItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          route="/projects"
+          route={`${prefix}/projects`}
           name="Projects"
         />
         <NaveItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          route="/repo"
+          route={`${prefix}/repo`}
           name="Repo"
         />
 
         <NaveItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          route="/blog"
+          route={`${prefix}/blog`}
           name="Blog"
         />
       </div>

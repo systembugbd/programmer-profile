@@ -14,11 +14,13 @@ import Image from "next/image";
 import styles from "./../styles/Sidebar.module.css";
 
 const Sidebar = () => {
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <div>
       <div>
         <Image
-          src="/team/138/b8983c92771.577242aee9382.jpg"
+          src={`${prefix}/team/138/b8983c92771.577242aee9382.jpg`}
           width="100px"
           height="100px"
           className="border-4 border-purple-700 border-solid rounded-full"

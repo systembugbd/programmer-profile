@@ -3,8 +3,6 @@ module.exports = {
     loader: "imgix",
     path: "https://mir-s3-cdn-cf.behance.net",
   },
-  assetPrefix: "/portfolio/",
-  env: {
-    BACKEND_URL: "/portfolio",
-  },
+  prefix: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
 };
