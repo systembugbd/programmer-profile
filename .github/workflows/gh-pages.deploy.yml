@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: "/programmer-profile"
+      NEXT_PUBLIC_BASE_PATH: "/"
 
     strategy:
       matrix:
