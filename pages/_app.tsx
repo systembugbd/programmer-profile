@@ -4,11 +4,11 @@ import Head from "next/head";
 import Navbar from "./../Components/Navbar";
 
 function MyApp({ Component, pageProps }) {
-  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href={prefix + "/favicon.ico"}>
+        <link rel="shortcut icon" href={prefix + "/favicon.ico"} />
         <title>
           FrontEnd Developer - JavaScript, React, NextJs, Tailwind, SCSS
         </title>
