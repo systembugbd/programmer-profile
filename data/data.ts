@@ -270,10 +270,18 @@ export const skills: MySkills[] = [
   {
     Icon: BiCodeAlt,
     type: "git",
-    name: "Git & Git Hub",
+    name: "Git & Github",
     label: "Medium",
     percentage: "75%",
   },
+  {
+    Icon: BiCodeAlt,
+    type: "git",
+    name: "Github Action - CI/CD",
+    label: "low",
+    percentage: "50%",
+  },
+
   {
     Icon: BiCodeAlt,
     type: "design",
