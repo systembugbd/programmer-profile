@@ -47,7 +47,7 @@ export const education: MyEdu[] = [
     Icon: BiBook,
     name: "Master of Business Administration (MBA)",
     institute: "Northern University Bangladesh",
-    grade: "CGPA: 3.7 (Result Withheld)",
+    grade: "CGPA: 3.65",
     year: "2014-2015",
     link: "https://nub.ac.bd/",
     sub: "Mejor in Marketing",
