@@ -30,9 +30,9 @@ const Navbar = () => {
   useEffect(() => {
     if (pathname === prefix + "/") setActiveItem("About");
     if (pathname === prefix + "/resume") setActiveItem("Resume");
-    if (pathname === prefix + "/projects") setActiveItem("Projects");
-    if (pathname === prefix + "/repo") setActiveItem("Repo");
-    if (pathname === prefix + "/blog") setActiveItem("Blog");
+    // if (pathname === prefix + "/projects") setActiveItem("Projects");
+    // if (pathname === prefix + "/repo") setActiveItem("Repo");
+    // if (pathname === prefix + "/blog") setActiveItem("Blog");
   }, []);
 
   return (
@@ -53,7 +53,7 @@ const Navbar = () => {
           route={`${prefix}/resume`}
           name="Resume"
         />
-        <NaveItem
+        {/* <NaveItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
           route={`${prefix}/projects`}
@@ -71,7 +71,7 @@ const Navbar = () => {
           setActiveItem={setActiveItem}
           route={`${prefix}/blog`}
           name="Blog"
-        />
+        /> */}
       </div>
     </div>
   );
